@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { GlobalStyles } from './styles/global';
+import { Layout } from './styles/styles';
+import Globe from './components/Globe';
+import Header from './components/Header';
+import NEOList from './components/NearEarthObjectList';
+import DataOptions from './components/DataOptions';
+
+import AsteroidState from './context/asteroids/AsteroidState';
+
+import Particles from './components/Particles/index';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AsteroidState>
+      <Layout>
+        <GlobalStyles />
+        <Header />
+        <Globe />
+        <Particles />
+        <DataOptions />
+        <NEOList />
+        <Footer />
+      </Layout>
+    </AsteroidState>
   );
 }
 
 export default App;
+
+// Attempt to create a layout with grid, see if you can addisn gthe particles file to a specific grid area, once that is complete change its z index, place the globe over the particles
