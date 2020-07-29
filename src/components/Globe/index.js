@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactGlobe from 'react-globe';
 
 import { ThreeSceneContainer } from './styles';

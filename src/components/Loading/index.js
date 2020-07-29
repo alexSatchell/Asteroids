@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   LoadingContainer,
-  AsteroidAnimation,
   AsteroidContainer,
   Asteroid1,
   Asteroid2,

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 // import AsteroidContext from '../../context/asteroids/asteroidContext';
 import NumberFormat from 'react-number-format';
 import Modal from 'react-modal';
@@ -33,25 +33,6 @@ const customStyles = {
     border: 'none',
     boxShadow: ' 0px 0px 10px 5px rgba(133,133,133,0.43)',
   },
-};
-
-const responsiveStyles = {
-  content: {
-    margin: 'auto auto',
-    width: '50%',
-    height: '50%',
-    background: '#fff',
-    border: 'none',
-    boxShadow: ' 0px 0px 10px 5px rgba(133,133,133,0.43)',
-  },
-};
-
-const styles = () => {
-  if (window.innerWidth < 650) {
-    return responsiveStyles;
-  } else {
-    return customStyles;
-  }
 };
 
 const NEO = ({ asteroid }) => {
@@ -95,7 +76,7 @@ const NEO = ({ asteroid }) => {
         </ButtonClose>
         <NEOContainerHeader>
           <AsteroidIcon>
-            <img src={require('./../../universe.png')} />
+            <img src={require('./../../universe.png')} alt='asteroid logo' />
           </AsteroidIcon>
           <AsteroidName>{name}</AsteroidName>
         </NEOContainerHeader>
@@ -155,7 +136,7 @@ const NEO = ({ asteroid }) => {
       <NEOContainerHeader>
         <AsteroidIcon>
           {/* <i className='fas fa-meteor'></i> */}
-          <img src={require('./../../universe.png')} />
+          <img src={require('./../../universe.png')} alt='asteroid logo' />
         </AsteroidIcon>
         <AsteroidName>{name}</AsteroidName>
       </NEOContainerHeader>

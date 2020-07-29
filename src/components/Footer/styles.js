@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { COLORS } from '../../styles/styles';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 
 export const FooterContainer = styled.div`
   grid-column: center-start / center-end;

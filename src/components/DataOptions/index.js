@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import AsteroidContext from '../../context/asteroids/asteroidContext';
 import moment from 'moment';
 import {
