@@ -15,7 +15,7 @@ const NEOList = () => {
   // Load asteroid data on render
   useEffect(() => {
     getAsteroids();
-  });
+  }, [ListContainer]);
 
   return (
     <ListContainer>

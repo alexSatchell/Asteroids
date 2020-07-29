@@ -72,6 +72,7 @@ export const CurrentDate = styled.p`
   grid-row: 1;
   font-size: 1.8rem;
   font-weight: bold;
+  display: inline-block;
 
   @media (${QUERIES.medium}) {
     margin: 0.7rem 0;
@@ -80,8 +81,6 @@ export const CurrentDate = styled.p`
   @media (${QUERIES.small}) {
     font-size: 2rem;
     padding: 1rem;
-    border-bottom: 1px solid black;
-    width: 100%;
   }
 `;
 
@@ -147,6 +146,16 @@ export const TextAnimation = keyframes`
 
 export const Text = styled.div`
   display: inline-block;
+`;
+
+export const DateContainer = styled.div`
+  font-size: 1.6rem;
+  grid-row: 1;
+
+  @media (${QUERIES.small}) {
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
 `;
 
 export const LoadingDot1 = styled.p`

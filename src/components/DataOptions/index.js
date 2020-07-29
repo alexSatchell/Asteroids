@@ -18,6 +18,7 @@ import {
   LoadingDot1,
   LoadingDot2,
   LoadingDot3,
+  DateContainer,
 } from './styles';
 
 const DataOptions = () => {
@@ -43,8 +44,8 @@ const DataOptions = () => {
 
   return (
     <NavContainer>
-      <CurrentDate>
-        Showing Data for
+      <DateContainer>
+        <CurrentDate>Showing Data for </CurrentDate>
         <Colon>:</Colon>
         {asteroids == null ? (
           <Text>
@@ -55,7 +56,7 @@ const DataOptions = () => {
         ) : (
           <Span>{formattedDate}</Span>
         )}
-      </CurrentDate>
+      </DateContainer>
 
       <FormGroup>
         <Label htmlFor='sort'>Sort By:</Label>
